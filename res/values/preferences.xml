@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Breathing -->
+    <string name="pref_inhale_duration">pref_inhale_duration</string>
+    <string name="pref_exhale_duration">pref_exhale_duration</string>
+    <string name="pref_hold_duration">pref_inhale_hold_duration</string>
+    <string name="pref_breathing_setup">pref_breathing_setup</string>
+    <string name="pref_breathing_prompts">pref_breathing_prompts</string>
+    <string name="pref_breathing_music">pref_breathing_music</string>
+    <string name="pref_breathing_custom_music">pref_breathing_custom_music</string>
+    <string name="pref_breathing_background">pref_breathing_background</string>
+    <string name="pref_breathing_session_duration">pref_breathing_session_duration</string>
+
+</resources>

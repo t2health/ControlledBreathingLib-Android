@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.t2.controlledbreathing.ControlledBreathingBackgroundView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/lay_breathing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/lay_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_add_time"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/breathing_plus" />
+
+            <ImageButton
+                android:id="@+id/btn_remove_time"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/breathing_minus" />
+
+            <LinearLayout
+                android:layout_width="54dp"
+                android:layout_height="0dp"
+                android:layout_above="@+id/btn_remove_time"
+                android:layout_below="@+id/btn_add_time" >
+
+                <com.t2.controlledbreathing.ControlledBreathingBarView
+                    android:id="@+id/bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bar" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_breathing_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true" >
+
+            <requestFocus />
+
+            <com.t2.controlledbreathing.OutlineTextView
+                android:id="@+id/lbl_inhale"
+                style="@style/ControlledBreathingLargeTextPortrait"
+                android:layout_above="@+id/lbl_message"
+                android:text="Inhale"
+                android:visibility="invisible" />
+
+            <com.t2.controlledbreathing.OutlineTextView
+                android:id="@+id/lbl_hold"
+                style="@style/ControlledBreathingLargeTextPortrait"
+                android:layout_above="@+id/lbl_message"
+                android:text="Hold..."
+                android:visibility="invisible" />
+
+            <com.t2.controlledbreathing.OutlineTextView
+                android:id="@+id/lbl_exhale"
+                style="@style/ControlledBreathingLargeTextPortrait"
+                android:layout_above="@+id/lbl_message"
+                android:text="Ready?" />
+
+            <com.t2.controlledbreathing.OutlineTextView
+                android:id="@+id/lbl_message"
+                style="@style/ControlledBreathingLargeTextPortrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:shadowColor="#99000000"
+                android:shadowRadius="2.0"
+                android:text="Tap to start."
+                android:textSize="26sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.t2.controlledbreathing.OutlineTextView
+        android:id="@+id/lbl_complete"
+        style="@style/ControlledBreathingLargeTextPortrait"
+        android:layout_centerInParent="true"
+        android:text="Well Done!"
+        android:visibility="invisible" />
+
+</RelativeLayout>

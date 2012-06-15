@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="breathing_hold_names">
+        <item>Disabled</item>
+        <item>1 Seconds</item>
+        <item>2 Seconds</item>
+        <item>3 Seconds</item>
+        <item>4 Seconds</item>
+    </string-array>
+    <string-array name="breathing_hold_values">
+        <item>0</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+    </string-array>
+    <string-array name="breathing_session_names">
+        <item>Unlimited</item>
+        <item>2 Minutes</item>
+        <item>5 Minutes</item>
+        <item>10 Minutes</item>
+        <item>15 Minutes</item>
+    </string-array>
+    <string-array name="breathing_session_values">
+        <item>0</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+    </string-array>
+
+</resources>
