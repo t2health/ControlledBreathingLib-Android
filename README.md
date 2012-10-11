@@ -45,4 +45,4 @@ License
 ==============================================
 Copyright 2011 The National Center for Telehealth and Technology
 
-T2 Mood Tracker is Licensed under the NASA Open Source License: [https://github.com/t2health/ControlledBreathingLib-Android/blob/master/NASA-LICENSE.txt](https://github.com/t2health/ControlledBreathingLib-Android/blob/master/NASA-LICENSE.txt)
+ControlledBreathingLib is Licensed under the NASA Open Source License: [https://github.com/t2health/ControlledBreathingLib-Android/blob/master/NASA-LICENSE.txt](https://github.com/t2health/ControlledBreathingLib-Android/blob/master/NASA-LICENSE.txt)
